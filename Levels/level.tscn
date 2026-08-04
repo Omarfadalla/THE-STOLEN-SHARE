@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dfwvc1tmlffa4"]
+
+[ext_resource type="Texture2D" uid="uid://byrb2aupna5si" path="res://icon.svg" id="1_s41d2"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_54b6e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtnvv"]
+albedo_texture = ExtResource("1_s41d2")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s41d2"]
+size = Vector3(15, 1, 15)
+
+[node name="Level" type="Node3D" unique_id=1744570966]
+
+[node name="Floor" type="StaticBody3D" parent="." unique_id=387252639]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=926095450]
+transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 15, 0, 0, 0)
+mesh = SubResource("BoxMesh_54b6e")
+surface_material_override/0 = SubResource("StandardMaterial3D_gtnvv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=1778860199]
+shape = SubResource("BoxShape3D_s41d2")
