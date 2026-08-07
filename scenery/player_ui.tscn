@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cuxpjflibm8ci"]
+
+[ext_resource type="Texture2D" uid="uid://degixxw258w7i" path="res://textures/Sight_64x64_007.png" id="1_laypy"]
+
+[node name="player_ui" type="Control" unique_id=464771036]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1958915680]
+
+[node name="crosshair" type="CenterContainer" parent="." unique_id=1327952355]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="crosshair" type="TextureRect" parent="crosshair" unique_id=1847718022]
+layout_mode = 2
+texture = ExtResource("1_laypy")
+stretch_mode = 3

@@ -15,6 +15,10 @@ run/main_scene="uid://bq7k1qe8xyv21"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
@@ -60,7 +64,7 @@ flashlight={
 [physics]
 
 3d/physics_engine="Jolt Physics"
-3d/default_gravity=32.0
+3d/default_gravity=150.0
 
 [rendering]
 

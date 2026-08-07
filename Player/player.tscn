@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://7xq82op0dxm5" path="res://Player/player.gd" id="1_l8h54"]
 [ext_resource type="Script" uid="uid://2dpmqsua6e3h" path="res://Player/fp_cam.gd" id="2_4ntmi"]
 [ext_resource type="Script" uid="uid://uaupfix5tt31" path="res://Player/player_interact.gd" id="3_btcbx"]
+[ext_resource type="PackedScene" uid="uid://cuxpjflibm8ci" path="res://scenery/player_ui.tscn" id="4_gwnis"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a241x"]
 
@@ -38,3 +39,5 @@ spot_range = 1237.1
 spot_attenuation = 0.9
 spot_angle = 45.27
 spot_angle_attenuation = 2.4622889
+
+[node name="player_ui" parent="." unique_id=464771036 instance=ExtResource("4_gwnis")]
