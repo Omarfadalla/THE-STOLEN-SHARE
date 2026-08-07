@@ -2,12 +2,14 @@
 
 [ext_resource type="Script" uid="uid://7xq82op0dxm5" path="res://Player/player.gd" id="1_l8h54"]
 [ext_resource type="Script" uid="uid://2dpmqsua6e3h" path="res://Player/fp_cam.gd" id="2_4ntmi"]
+[ext_resource type="Script" uid="uid://uaupfix5tt31" path="res://Player/player_interact.gd" id="3_btcbx"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a241x"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ynen2"]
 
 [node name="Player" type="CharacterBody3D" unique_id=131117120]
+floor_max_angle = 1.134464
 script = ExtResource("1_l8h54")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1456578267]
@@ -21,3 +23,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7165284, 0)
 script = ExtResource("2_4ntmi")
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=1102572910]
+
+[node name="RayCast3D" type="RayCast3D" parent="Head" unique_id=1610505935]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.09829581, -0.44429433)
+target_position = Vector3(0, -1.5, 0)
+script = ExtResource("3_btcbx")
+
+[node name="flashlight" type="SpotLight3D" parent="Head" unique_id=187171137]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18098092, -0.5579548)
+light_energy = 200.0
+shadow_enabled = true
+shadow_bias = 2.306
+spot_range = 1237.1
+spot_attenuation = 0.9
+spot_angle = 45.27
+spot_angle_attenuation = 2.4622889

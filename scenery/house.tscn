@@ -1,5 +1,18 @@
 [gd_scene format=4 uid="uid://b8phquwn4uqhv"]
 
+[ext_resource type="PackedScene" uid="uid://l7vklidutrgy" path="res://scenery/stairs.tscn" id="1_3fs81"]
+[ext_resource type="Material" uid="uid://cu2gqwc2fjql7" path="res://materials/house_material.tres" id="1_cdgek"]
+[ext_resource type="Material" uid="uid://dxfifjaon5nlv" path="res://materials/house_bloody.tres" id="2_i02j4"]
+[ext_resource type="Material" uid="uid://dr73pf8fwt8wo" path="res://materials/stone_bloody.tres" id="3_arxyt"]
+[ext_resource type="Material" uid="uid://dsoptmq0jww1c" path="res://materials/ceiling.tres" id="4_w7jv0"]
+[ext_resource type="PackedScene" uid="uid://cdbtl5cq6qhuc" path="res://scenery/skull_table.tscn" id="6_jotj8"]
+[ext_resource type="PackedScene" uid="uid://b2p36xbo5nxvg" path="res://scenery/chair.tscn" id="7_3wbpw"]
+[ext_resource type="PackedScene" uid="uid://615e3aba2ts0" path="res://scenery/drawer.tscn" id="8_30fy3"]
+[ext_resource type="PackedScene" uid="uid://c6sftgi5rbqbo" path="res://scenery/couch.tscn" id="9_rbql2"]
+[ext_resource type="PackedScene" uid="uid://cw15jrf8w6lua" path="res://scenery/pic_1.tscn" id="10_ccgrf"]
+[ext_resource type="PackedScene" uid="uid://dqjneyu503s5q" path="res://scenery/pic_2.tscn" id="11_h4qed"]
+[ext_resource type="PackedScene" uid="uid://o3s617pt1lc4" path="res://scenery/pic_3.tscn" id="12_h57wj"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sy2ny"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_33sgd"]
@@ -232,6 +245,7 @@ data = PackedVector3Array(-1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1,
 
 [node name="Cube" type="MeshInstance3D" parent="meshes" unique_id=1629752126]
 transform = Transform3D(7.331, 0, 0, 0, 4.036719, 0, 0, 0, 7.157, 13.349004, 1.2737505, -7.3185844)
+material_override = ExtResource("2_i02j4")
 mesh = SubResource("ArrayMesh_t7bvg")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="meshes/Cube" unique_id=282146392]
@@ -241,6 +255,7 @@ shape = SubResource("ConcavePolygonShape3D_lkfkg")
 
 [node name="Cube_001" type="MeshInstance3D" parent="meshes" unique_id=1748130389]
 transform = Transform3D(21.086, 0, 0, 0, 5.334, 0, 0, 0, 14.715, 0, 2.0262156, 0)
+material_override = ExtResource("1_cdgek")
 mesh = SubResource("ArrayMesh_s6hrk")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="meshes/Cube_001" unique_id=69741073]
@@ -250,6 +265,7 @@ shape = SubResource("ConcavePolygonShape3D_3fs81")
 
 [node name="Cube_002" type="MeshInstance3D" parent="meshes" unique_id=427303156]
 transform = Transform3D(7.331, 0, 0, 0, 4.036719, 0, 0, 0, 7.157, -1.348248, 1.2658982, -7.2837415)
+material_override = ExtResource("2_i02j4")
 mesh = SubResource("ArrayMesh_ok6lv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="meshes/Cube_002" unique_id=598108153]
@@ -259,6 +275,7 @@ shape = SubResource("ConcavePolygonShape3D_cdgek")
 
 [node name="Cube_003" type="MeshInstance3D" parent="meshes" unique_id=733076446]
 transform = Transform3D(6.728577, 0, 0, 0, 4.036719, 0, 0, 0, 4.480263, 13.895648, 1.2658982, 9.456364)
+material_override = ExtResource("2_i02j4")
 mesh = SubResource("ArrayMesh_ykstq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="meshes/Cube_003" unique_id=495563821]
@@ -268,6 +285,7 @@ shape = SubResource("ConcavePolygonShape3D_i02j4")
 
 [node name="Cube_004" type="MeshInstance3D" parent="meshes" unique_id=1021489894]
 transform = Transform3D(21.086, 0, 0, 0, 5.334, 0, 0, 0, 14.715, 0, -8.56448, 0)
+material_override = ExtResource("3_arxyt")
 mesh = SubResource("ArrayMesh_8s78j")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="meshes/Cube_004" unique_id=1149953895]
@@ -277,6 +295,7 @@ shape = SubResource("ConcavePolygonShape3D_arxyt")
 
 [node name="Cube_005" type="MeshInstance3D" parent="meshes" unique_id=1736780605]
 transform = Transform3D(23.687046, 0, 0, 0, 0.12673235, 0, 0, 0, 15.930842, -0.3441126, 7.3268547, 0)
+material_override = ExtResource("4_w7jv0")
 mesh = SubResource("ArrayMesh_3odox")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="meshes/Cube_005" unique_id=1414316957]
@@ -284,5 +303,73 @@ mesh = SubResource("ArrayMesh_3odox")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="meshes/Cube_005/StaticBody3D" unique_id=329411350]
 shape = SubResource("ConcavePolygonShape3D_w7jv0")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1185923829]
+[node name="lights" type="Node3D" parent="." unique_id=1214058234]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lights" unique_id=1185923829]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -5)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lights" unique_id=348178919]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4.123437, 7.611539)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="lights" unique_id=1802544363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4.9612446, 1.2113132)
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="lights" unique_id=408692839]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.7708244, 6.4390297, 2.5895414)
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="lights" unique_id=1484267282]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8164201, 6.4390297, 2.5895414)
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="lights" unique_id=2014799971]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8164201, 6.4390297, 8.372345)
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="lights" unique_id=1603519897]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8994088, 6.4390297, 8.372345)
+
+[node name="OmniLight3D9" type="OmniLight3D" parent="lights" unique_id=175505899]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8994088, 6.4390297, 1.4836488)
+
+[node name="OmniLight3D10" type="OmniLight3D" parent="lights" unique_id=1909348030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8994088, 6.4390297, 1.4836488)
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="lights" unique_id=5217074]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.7708244, 6.4065294, 8.6723995)
+
+[node name="stairs" parent="." unique_id=485828670 instance=ExtResource("1_3fs81")]
+transform = Transform3D(1.3508596, 0, 0, 0, 2.0037017, 0, 0, 0, 1.2811085, 1.6433179, -8.390739, 7.394683)
+
+[node name="Chair" parent="." unique_id=201388870 instance=ExtResource("7_3wbpw")]
+transform = Transform3D(1.5443511, 0, 2.5719602, 0, 3, 0, -2.5719602, 0, 1.5443511, -10.092745, -2.663698, -2.8012059)
+
+[node name="Chair2" parent="." unique_id=828493592 instance=ExtResource("7_3wbpw")]
+transform = Transform3D(1.5451143, 0, -2.571502, 0, 3, 0, 2.571502, 0, 1.5451143, -10.092745, -2.663698, -11.110723)
+
+[node name="SkullTable" parent="." unique_id=925130325 instance=ExtResource("6_jotj8")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -9.982303, -0.08632231, -6.934141)
+
+[node name="drawer" parent="." unique_id=933974820 instance=ExtResource("8_30fy3")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -19.816135, -0.6335685, -12.162454)
+
+[node name="drawer2" parent="." unique_id=1093023944 instance=ExtResource("8_30fy3")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, -6.556072, -0.6335685, -13.6877985)
+
+[node name="drawer3" parent="." unique_id=1618904275 instance=ExtResource("8_30fy3")]
+transform = Transform3D(8.347416e-09, 0, 0.7, 0, 0.7, 0, -0.7, 0, 8.347416e-09, 10.401078, -0.6335685, -1.4616243)
+
+[node name="drawer4" parent="." unique_id=1609996896 instance=ExtResource("8_30fy3")]
+transform = Transform3D(-0.7, 0, -6.119594e-08, 0, 0.7, 0, 6.119594e-08, 0, -0.7, 6.569723, -0.6335685, 12.2988)
+
+[node name="couch" parent="." unique_id=2077630531 instance=ExtResource("9_rbql2")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, -18.231533, -2.6809835, -5.472665)
+
+[node name="pic1" parent="." unique_id=2081538714 instance=ExtResource("10_ccgrf")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -20.777256, 4.4917564, -4.407531)
+
+[node name="pic2" parent="." unique_id=1967205406 instance=ExtResource("11_h4qed")]
+transform = Transform3D(-6.119594e-08, 0, -1.4, 0, 1.4, 0, 1.4, 0, -6.119594e-08, 7.7492647, 3.408807, 9.30974)
+
+[node name="pic3" parent="." unique_id=420209785 instance=ExtResource("12_h57wj")]
+transform = Transform3D(-5.6824803e-08, 0, -1.3, 0, 1.3, 0, 1.3, 0, -5.6824803e-08, 7.487863, 0.7713618, 12.548797)
+
+[node name="pic4" parent="." unique_id=519775358 instance=ExtResource("12_h57wj")]
+transform = Transform3D(-5.6824803e-08, 0, -1.3, 0, 1.3, 0, 1.3, 0, -5.6824803e-08, -8.355881, 0.41846108, -5.320451)

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ed1c280w40sw"]
+
+[ext_resource type="Texture2D" uid="uid://c2e7dejq2pdti" path="res://textures/drawers2.png" id="1_mbm81"]
+
+[resource]
+albedo_texture = ExtResource("1_mbm81")
+uv1_scale = Vector3(2, 3, 0)

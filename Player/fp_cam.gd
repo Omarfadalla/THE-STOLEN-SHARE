@@ -5,6 +5,10 @@ var sensitivity = 0.2
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
+func _physics_process(delta: float) -> void:
+	if Input.is_action_just_pressed("flashlight"):
+		$flashlight.visible = !$flashlight.visible
+
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		get_parent().rotate_y(deg_to_rad(-event.relative.x * sensitivity))
