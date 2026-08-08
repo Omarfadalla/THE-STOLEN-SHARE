@@ -1,5 +1,6 @@
 extends Control
 
+
 func _ready() -> void:
 	$pause_menu.visible = false
 
@@ -10,12 +11,23 @@ func resume_game():
 
 func quit_game():
 	get_tree().quit()
+	
+func open_safe_password():
+	$safe_ui.visible = true 
+	get_tree().paused = true
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+
+func exit_safe():
+	$safe_ui.visible = false 
+	get_tree().paused = false
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
 
 func set_task(task_text : String) -> void:
 	$task_ui/task_text.text = task_text
 
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("pause"):
+	if Input.is_action_just_pressed("pause") and !$safe_ui.visible:
 		$pause_menu.visible = !$pause_menu.visible
 		get_tree().paused = $pause_menu.visible
 		if get_tree().paused:
