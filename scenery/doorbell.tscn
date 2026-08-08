@@ -1,9 +1,16 @@
 [gd_scene format=4 uid="uid://5bj8oyg40ppw"]
 
 [ext_resource type="Texture2D" uid="uid://dwcvrvnbdruax" path="res://glb_models/doorbell_-_game_ready_low_poly_0.png" id="1_pq3tl"]
-[ext_resource type="Script" uid="uid://dtyawd20hmwge" path="res://general_scripts/doorbell.gd" id="1_xdwwp"]
 [ext_resource type="Texture2D" uid="uid://bnos20vp88mh3" path="res://glb_models/doorbell_-_game_ready_low_poly_1.png" id="2_xdwwp"]
 [ext_resource type="Texture2D" uid="uid://b3dpmmye2lb14" path="res://glb_models/doorbell_-_game_ready_low_poly_2.png" id="3_6em3x"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xdwwp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6em3x"]
+albedo_color = Color(0.30861747, 0.47424644, 0.54378825, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xdwwp"]
+points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jl70s"]
 resource_name = "White_painted_metal"
@@ -54,17 +61,12 @@ shadow_mesh = SubResource("ArrayMesh_2savl")
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pq3tl"]
 points = PackedVector3Array(0.99041724, 0.93254566, 1.4355125, -8.813011, -30.010677, -3.9009998, 8.550343, -30.010677, -3.9009998, -8.813011, 2.6732798, -3.9009998, -9.681179, -31.078281, 0.3116716, 8.550343, 2.6732798, -3.9009998, 9.41851, -31.078281, 0.3116716, -9.681179, 3.7408829, 0.3116716, 9.41851, 3.7408829, 0.3116716, -1.2512163, -28.273464, 1.4355125, 0.99041724, -28.273464, 1.4355125, -1.2512163, 0.93254566, 1.4355125)
 
-[sub_resource type="BoxMesh" id="BoxMesh_xdwwp"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6em3x"]
-albedo_color = Color(0.30861747, 0.47424644, 0.54378825, 1)
-
 [sub_resource type="Animation" id="Animation_f1gek"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Cylinder/Cylinder_White painted metal_0/MeshInstance3D:position")
+tracks/0/path = NodePath("door_bell:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -79,7 +81,7 @@ resource_name = "press"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Cylinder/Cylinder_White painted metal_0/MeshInstance3D:position")
+tracks/0/path = NodePath("door_bell:position")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -96,7 +98,18 @@ _data = {
 }
 
 [node name="doorbell" type="Node3D" unique_id=1245862659]
-script = ExtResource("1_xdwwp")
+
+[node name="door_bell" type="MeshInstance3D" parent="." unique_id=1598472895]
+transform = Transform3D(0.31, 0, 0, 0, 0.31, 2.3404361e-08, 0, -2.340436e-08, 0.31, 0, -13.927668, -0.05174842)
+mesh = SubResource("BoxMesh_xdwwp")
+surface_material_override/0 = SubResource("StandardMaterial3D_6em3x")
+
+[node name="door_bell" type="StaticBody3D" parent="door_bell" unique_id=396466355]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, -7.1054274e-15, 1, 0, 0.053689003, -0.03175001)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="door_bell/door_bell" unique_id=454615753]
+transform = Transform3D(1, 0, 0, 0, 1, 3.5527137e-15, 0, 0, 1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_xdwwp")
 
 [node name="Cylinder" type="Node3D" parent="." unique_id=1300846659]
 transform = Transform3D(0.056512106, 0, 0, 0, 0.056512106, 4.266546e-09, 0, -4.266546e-09, 0.056512106, 0, 0, 0)
@@ -104,16 +117,11 @@ transform = Transform3D(0.056512106, 0, 0, 0, 0.056512106, 4.266546e-09, 0, -4.2
 [node name="Cylinder_White painted metal_0" type="MeshInstance3D" parent="Cylinder" unique_id=597024667]
 mesh = SubResource("ArrayMesh_lawcs")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Cylinder/Cylinder_White painted metal_0" unique_id=702708654]
+[node name="door_bell" type="StaticBody3D" parent="Cylinder/Cylinder_White painted metal_0" unique_id=702708654]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Cylinder/Cylinder_White painted metal_0/StaticBody3D" unique_id=1272200755]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.172966e-08, -0.68518)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cylinder/Cylinder_White painted metal_0/door_bell" unique_id=1272200755]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2927745e-07, -1.7123314)
 shape = SubResource("ConvexPolygonShape3D_pq3tl")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Cylinder/Cylinder_White painted metal_0" unique_id=1598472895]
-transform = Transform3D(3.9978936, 0, 0, 0, 6.678948, 2.842171e-14, 0, -1.1368684e-13, 4.062759, 0, -13.927668, -0.05174842)
-mesh = SubResource("BoxMesh_xdwwp")
-surface_material_override/0 = SubResource("StandardMaterial3D_6em3x")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1981340870]
 libraries/ = SubResource("AnimationLibrary_u3f33")

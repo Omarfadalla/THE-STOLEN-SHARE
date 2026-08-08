@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://d3xsloy8nkswk"]
+
+[node name="safe_ui" type="CanvasLayer" unique_id=236796169]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=721737746]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.21, 0.21, 0.21, 0.3882353)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1962457707]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 150.0
+offset_top = -160.0
+offset_right = -141.0
+offset_bottom = 104.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.02, 0.02, 0.3882353)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=347959545]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -212.5
+offset_top = -122.0
+offset_right = 212.5
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 37
+bbcode_enabled = true
+text = "[center]Enter Safe Passcode ..."
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=426300810]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -396.5
+offset_top = -59.0
+offset_right = 396.5
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 47
+text = "xxxxx"
+alignment = 1
+context_menu_enabled = false
+
+[node name="Button" type="Button" parent="." unique_id=1011447267]
+offset_left = 502.0
+offset_top = 441.0
+offset_right = 1011.0
+offset_bottom = 550.0
+theme_override_font_sizes/font_size = 41
+text = "Cancel"
+
+[node name="Button2" type="Button" parent="." unique_id=1331387536]
+offset_left = 152.0
+offset_top = 441.0
+offset_right = 492.0
+offset_bottom = 548.0
+theme_override_font_sizes/font_size = 38
+text = "Confirm"

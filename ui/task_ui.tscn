@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cvatfa1fsbwtc"]
+
+[node name="task_ui" type="CanvasLayer" unique_id=1958779861]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1613503868]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -112.0
+offset_right = 1.0
+offset_bottom = 57.0
+grow_horizontal = 0
+theme_override_font_sizes/normal_font_size = 35
+text = "Task : "
+
+[node name="task_text" type="RichTextLabel" parent="." unique_id=373908146]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -326.0
+offset_top = 60.0
+offset_right = -3.0
+offset_bottom = 204.0
+grow_horizontal = 0
+theme_override_font_sizes/normal_font_size = 25
+text = "Sample text for task"
+text_direction = 2
