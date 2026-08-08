@@ -10,13 +10,20 @@ func _physics_process(delta: float) -> void:
 				crosshair.visible = true
 			if Input.is_action_just_pressed("interact"):
 				hit.get_parent().get_parent().get_parent().toggle_door()
-	if is_colliding():
+	elif is_colliding():
 		var hit = get_collider()
 		if hit.name == "light_switch":
 			if !crosshair.visible:
 				crosshair.visible = true
 			if Input.is_action_just_pressed("interact"):
 				hit.get_parent().toggle_lights() 
+	elif is_colliding():
+		var hit = get_collider()
+		if hit.name == "door_bell":
+			if !crosshair.visible:
+				crosshair.visible = true
+			if Input.is_action_just_pressed("interact"):
+				hit.get_parent().ring_bell() 
 	else:
 		if crosshair.visible:
 				crosshair.visible = false
