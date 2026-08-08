@@ -1,13 +1,19 @@
 extends RayCast3D
 
-@onready var crosshair = get_tree().current_scene.get_node("player/player_ui")
+@onready var player_ui = get_tree().current_scene.get_node("player/player_ui")
+@onready var crosshair = player_ui.get_node("crosshair")
 
 
 func _physics_process(delta: float) -> void:
 	if is_colliding():
 		var hit = get_collider()
 
-		if hit.name == "door":
+		if hit.name == "safe":
+			if not crosshair.visible:
+				crosshair.visible = true
+			if Input.is_action_just_pressed("interact"):
+				player_ui.open_safe_password()
+		elif hit.name == "door":
 			if not crosshair.visible:
 				crosshair.visible = true
 			if Input.is_action_just_pressed("interact"):

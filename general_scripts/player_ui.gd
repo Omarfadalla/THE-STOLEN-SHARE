@@ -1,8 +1,20 @@
 extends Control
 
+@onready var safe_anim = get_tree().current_scene.get_node("safe/AnimationPlayer")
+@onready var rng = RandomNumberGenerator.new()
+var safe_password
+var safe_interactable : bool = true
 
 func _ready() -> void:
+	$safe_ui.visible = false
 	$pause_menu.visible = false
+	var p1 = rng.randi_range(0,9)
+	var p2 = rng.randi_range(0,9)
+	var p3 = rng.randi_range(0,9)
+	var p4 = rng.randi_range(0,9)
+	var p5 = rng.randi_range(0,9)
+	safe_password = str(p1) + str(p2) + str(p3) + str(p4) + str(p5)
+	print(safe_password)
 
 func resume_game():
 	get_tree().paused = false
@@ -13,9 +25,16 @@ func quit_game():
 	get_tree().quit()
 	
 func open_safe_password():
-	$safe_ui.visible = true 
-	get_tree().paused = true
-	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	if safe_interactable: 
+		$safe_ui.visible = true 
+		get_tree().paused = true
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+
+func confirm_password():
+	if $safe_ui/password.text == safe_password :
+		safe_anim.play("open")
+		safe_interactable = false
+		exit_safe()
 
 func exit_safe():
 	$safe_ui.visible = false 

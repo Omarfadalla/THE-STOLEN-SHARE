@@ -39,5 +39,8 @@ stretch_mode = 3
 
 [connection signal="pressed" from="pause_menu/resume" to="." method="resume_game"]
 [connection signal="pressed" from="pause_menu/quit_game" to="." method="quit_game"]
+[connection signal="pressed" from="safe_ui/back" to="." method="exit_safe"]
+[connection signal="pressed" from="safe_ui/confirm" to="." method="confirm_password"]
 
 [editable path="pause_menu"]
+[editable path="safe_ui"]
