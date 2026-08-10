@@ -1,15 +1,8 @@
 extends Control
 
-# =========================================================
-# SAFE UI — rotary dial combination lock.
-# Drag the dial (or use the arrow buttons / ←→ keys) to spin
-# to a digit, then LOCK IN (or Enter) to commit it. After 5
-# digits, the code is checked automatically.
-# Public API unchanged: open_safe_password(), exit_safe().
-# =========================================================
-
 @onready var safe_anim = get_tree().current_scene.get_node("safe/AnimationPlayer")
 @onready var dial = $MainPanel/DialArea/Dial
+@onready var code_paper = get_tree().current_scene.get_node("code_paper")
 
 var rng = RandomNumberGenerator.new()
 
@@ -18,11 +11,12 @@ var entered_code : String = ""
 var safe_interactable : bool = true
 var safe_busy : bool = false
 var wrong_attempts : int = 0
-
 var slot_labels : Array = []
 
 const CODE_LENGTH := 5
 const GLITCH_CHARS := "!@#$%&*?/\\|<>01"
+
+
 
 func _ready() -> void:
 	visible = false
@@ -35,7 +29,9 @@ func _ready() -> void:
 	for i in CODE_LENGTH:
 		safe_password += str(rng.randi_range(0, 9))
 	print("SAFE CODE (debug): ", safe_password)
-
+	
+	code_paper.get_node("code_text").mesh.text = safe_password
+	
 	_setup_scanlines()
 	_setup_vignette()
 	_style_buttons()
