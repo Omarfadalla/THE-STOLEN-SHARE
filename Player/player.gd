@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 
 var SPEED = 250
-const JUMP_VELOCITY = 50
+const JUMP_VELOCITY = 100
 var crouching :bool = false
 
 func _process(delta: float) -> void:

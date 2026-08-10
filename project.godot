@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="canvas_items"
 
 [editor_plugins]
@@ -74,7 +75,7 @@ pause={
 [physics]
 
 3d/physics_engine="Jolt Physics"
-3d/default_gravity=90.0
+3d/default_gravity=300.0
 
 [rendering]
 

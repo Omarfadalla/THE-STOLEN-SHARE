@@ -1,28 +1,30 @@
 extends Node3D
-@export var on : = false
+
+@export var on : bool = false
 @export var on_mat : StandardMaterial3D
 @export var off_mat : StandardMaterial3D
-@export var bulb_name : String = ""  # just type the bulb's node name here, e.g. "bulb", "bulb2", "bulb3"
+@export var bulb_name : String = ""
 
 var light_bulb : Node3D
 
 func _ready() -> void:
+	on = false
 	light_bulb = get_tree().current_scene.find_child(bulb_name, true, false)
 	if light_bulb == null:
 		push_warning("light_switch couldn't find a bulb named: " + bulb_name)
 		return
 	_update_lights()
 
-func toggle_lights():
+func toggle_lights() -> void:
 	on = !on
 	_update_lights()
 
-func _update_lights():
+func _update_lights() -> void:
 	if light_bulb == null:
 		return
-	var mat = on_mat if on else off_mat
 	$on.visible = on
 	$off.visible = !on
-	light_bulb.get_node("LED FLAT Base/light").material_override = mat
-	light_bulb.get_node("LED FLAT Base/light2").material_override = mat
-	light_bulb.get_node("OmniLight3D").visible = on
+	if light_bulb.has_method("set_bulb_state"):
+		light_bulb.set_bulb_state(on)
+	else:
+		push_warning("Bulb '" + bulb_name + "' has no set_bulb_state method.")

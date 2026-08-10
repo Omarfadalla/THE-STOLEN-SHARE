@@ -1443,7 +1443,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_8fgwg"]
 resource_name = "open"
-length = 5.0
+length = 6.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1451,10 +1451,34 @@ tracks/0/path = NodePath("hinge:rotation")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 5),
+"times": PackedFloat32Array(0, 6),
 "transitions": PackedFloat32Array(-2, -0.5),
 "update": 0,
 "values": [Vector3(0, 2.9802319e-08, 0), Vector3(0, 3.1415927, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("hinge/safe_door/Handle_FINAL/Handle_FINAL_Safe_small_0:rotation")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.4666667, 2),
+"transitions": PackedFloat32Array(-2, 2, -0.5),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(1.5707964, 0, 0), Vector3(3.1415927, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("hinge/safe_door/Locker_FINAL/Locker_FINAL_Safe_small_0:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.4333333, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.7853982, 0, 0), Vector3(1.5707964, 0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_emjkc"]
@@ -1495,6 +1519,7 @@ mesh = SubResource("ArrayMesh_5aorv")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21153486, -1.1920929e-07, -1.7728506)
 
 [node name="Handle_FINAL_Safe_small_0" type="MeshInstance3D" parent="hinge/safe_door/Handle_FINAL" unique_id=398915219]
+transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_gj1rk")
 
 [node name="Locker_Base_FINAL" type="Node3D" parent="hinge/safe_door" unique_id=1460394773]
@@ -1507,6 +1532,7 @@ mesh = SubResource("ArrayMesh_elqg7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02883619, 0, -0.8480716)
 
 [node name="Locker_FINAL_Safe_small_0" type="MeshInstance3D" parent="hinge/safe_door/Locker_FINAL" unique_id=1855363739]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
 mesh = SubResource("ArrayMesh_33kvf")
 
 [node name="Lockets_FINAL" type="Node3D" parent="hinge/safe_door" unique_id=958002133]

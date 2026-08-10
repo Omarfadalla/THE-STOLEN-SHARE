@@ -1,20 +1,7 @@
 extends Control
 
-@onready var safe_anim = get_tree().current_scene.get_node("safe/AnimationPlayer")
-@onready var rng = RandomNumberGenerator.new()
-var safe_password
-var safe_interactable : bool = true
-
 func _ready() -> void:
-	$safe_ui.visible = false
 	$pause_menu.visible = false
-	var p1 = rng.randi_range(0,9)
-	var p2 = rng.randi_range(0,9)
-	var p3 = rng.randi_range(0,9)
-	var p4 = rng.randi_range(0,9)
-	var p5 = rng.randi_range(0,9)
-	safe_password = str(p1) + str(p2) + str(p3) + str(p4) + str(p5)
-	print(safe_password)
 
 func resume_game():
 	get_tree().paused = false
@@ -23,24 +10,12 @@ func resume_game():
 
 func quit_game():
 	get_tree().quit()
-	
-func open_safe_password():
-	if safe_interactable: 
-		$safe_ui.visible = true 
-		get_tree().paused = true
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
-func confirm_password():
-	if $safe_ui/password.text == safe_password :
-		safe_anim.play("open")
-		safe_interactable = false
-		exit_safe()
+func open_safe_password() -> void:
+	$safe_ui.open_safe_password()
 
 func exit_safe():
-	$safe_ui.visible = false 
-	get_tree().paused = false
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-
+	$safe_ui.exit_safe()
 
 func set_task(task_text : String) -> void:
 	$task_ui/task_text.text = task_text

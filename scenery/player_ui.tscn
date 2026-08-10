@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://crac4gpavi62u" path="res://general_scripts/player_ui.gd" id="1_8cahr"]
 [ext_resource type="Texture2D" uid="uid://degixxw258w7i" path="res://textures/Sight_64x64_007.png" id="1_laypy"]
 [ext_resource type="PackedScene" uid="uid://c05metlwbo534" path="res://ui/pause_menu.tscn" id="3_x0lbi"]
-[ext_resource type="PackedScene" uid="uid://d3xsloy8nkswk" path="res://ui/safe_ui.tscn" id="4_fctjc"]
+[ext_resource type="PackedScene" uid="uid://duneirrrwvcgc" path="res://ui/safe_ui.tscn" id="4_fctjc"]
 [ext_resource type="PackedScene" uid="uid://cvatfa1fsbwtc" path="res://ui/task_ui.tscn" id="4_x0lbi"]
 
 [node name="player_ui" type="Control" unique_id=464771036]
@@ -34,13 +34,12 @@ stretch_mode = 3
 [node name="pause_menu" parent="." unique_id=501680892 instance=ExtResource("3_x0lbi")]
 
 [node name="safe_ui" parent="." unique_id=236796169 instance=ExtResource("4_fctjc")]
+layout_mode = 1
 
 [node name="task_ui" parent="." unique_id=1958779861 instance=ExtResource("4_x0lbi")]
 
 [connection signal="pressed" from="pause_menu/resume" to="." method="resume_game"]
 [connection signal="pressed" from="pause_menu/quit_game" to="." method="quit_game"]
-[connection signal="pressed" from="safe_ui/back" to="." method="exit_safe"]
-[connection signal="pressed" from="safe_ui/confirm" to="." method="confirm_password"]
 
 [editable path="pause_menu"]
 [editable path="safe_ui"]
