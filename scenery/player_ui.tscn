@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://crac4gpavi62u" path="res://general_scripts/player_ui.gd" id="1_8cahr"]
 [ext_resource type="Texture2D" uid="uid://degixxw258w7i" path="res://textures/Sight_64x64_007.png" id="1_laypy"]
 [ext_resource type="PackedScene" uid="uid://c05metlwbo534" path="res://ui/pause_menu.tscn" id="3_x0lbi"]
-[ext_resource type="PackedScene" uid="uid://duneirrrwvcgc" path="res://ui/safe_ui.tscn" id="4_fctjc"]
+[ext_resource type="PackedScene" uid="uid://bklf7fogc07s8" path="res://ui/safe_ui.tscn" id="4_fctjc"]
 [ext_resource type="PackedScene" uid="uid://cvatfa1fsbwtc" path="res://ui/task_ui.tscn" id="4_x0lbi"]
 
 [node name="player_ui" type="Control" unique_id=464771036]
@@ -35,6 +35,14 @@ stretch_mode = 3
 
 [node name="safe_ui" parent="." unique_id=236796169 instance=ExtResource("4_fctjc")]
 layout_mode = 1
+
+[node name="ArrowLeft" parent="safe_ui/MainPanel/DialArea" parent_id_path=PackedInt32Array(236796169, 454158033) index="0" unique_id=16765847]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ArrowRight" parent="safe_ui/MainPanel/DialArea" parent_id_path=PackedInt32Array(236796169, 454158033) index="2" unique_id=1317672590]
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="task_ui" parent="." unique_id=1958779861 instance=ExtResource("4_x0lbi")]
 
