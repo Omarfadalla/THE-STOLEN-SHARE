@@ -1,3 +1,5 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+glb_models/front_door_of_a_mansion_4.glb
+scenery/fence_door.tscn

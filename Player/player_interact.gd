@@ -28,6 +28,16 @@ func _physics_process(delta: float) -> void:
 				crosshair.visible = true
 			if Input.is_action_just_pressed("interact"):
 				hit.get_parent().ring_bell()
+		elif hit.name == "left_door":
+			if not crosshair.visible:
+				crosshair.visible = true
+			if Input.is_action_just_pressed("interact"):
+				hit.get_parent().toggle_fence_gate()
+		elif hit.name == "right_door":
+			if not crosshair.visible:
+				crosshair.visible = true
+			if Input.is_action_just_pressed("interact"):
+				hit.get_parent().toggle_fence_gate()
 		else:
 			if crosshair.visible:
 				crosshair.visible = false
