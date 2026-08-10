@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://cui8nm7htwtrp"]
 
+[ext_resource type="Script" uid="uid://djw4ynomcfove" path="res://general_scripts/code_paper.gd" id="1_g01vd"]
 [ext_resource type="Texture2D" uid="uid://dm4iqn2afbv3t" path="res://glb_models/papers_0.png" id="1_web1u"]
 [ext_resource type="Texture2D" uid="uid://cg1ex7gnmrbfn" path="res://glb_models/home_decor_set_cloth_covered_3.jpg" id="2_g01vd"]
 
@@ -54,6 +55,10 @@ depth = 0.0
 size = Vector3(0.92967224, 0.13244629, 1.5156326)
 
 [node name="code_paper" type="RigidBody3D" unique_id=2055968870]
+freeze = true
+contact_monitor = true
+max_contacts_reported = 3
+script = ExtResource("1_g01vd")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1013982055]
 transform = Transform3D(-0.48051772, 5.9098156e-08, -1.267894e-07, 5.012974e-08, 2.3328631e-08, -1.6852657, -3.6278067e-08, -0.782779, -5.0224827e-08, 0, 0, 0)
@@ -67,3 +72,5 @@ mesh = SubResource("TextMesh_cnefa")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1282650311]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.022575378, -0.005065918, 0.052822113)
 shape = SubResource("BoxShape3D_web1u")
+
+[connection signal="body_entered" from="." to="." method="hit_obj"]

@@ -1,0 +1,117 @@
+[gd_scene format=4 uid="uid://dsheobs55n4te"]
+
+[ext_resource type="Texture2D" uid="uid://cldj2k5x6bf6o" path="res://glb_models/simple_sidewalk_tiles_0.png" id="1_6qblk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jtx5n"]
+resource_name = "Material"
+cull_mode = 2
+albedo_color = Color(0.7220283, 0.7220283, 0.7220283, 1)
+albedo_texture = ExtResource("1_6qblk")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jnmdy"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAEAAwAFAAIABQAAAAIABgAEAAAABQAGAAAABwABAAQABwADAAEABgAHAAQABQADAAcABQAHAAYA"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("////////AAAAAAAA//8AAAAA/////wAAAAAAAAAAAAD//wAA//8AAAAA//8AAAAA/////wAAAAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_i6era"]
+resource_name = "Sketchfab_Scene_Cell1_Material_0"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"attribute_data": PackedByteArray("ZKWH2hWA/v9kpf//FYCH2tz7+Kig+ACGoPj4qNz7AIYv//io8/sAhvP7+Kgv/wCG3fvF+///5v///8X73fvm/2/4+Kgz9QCGM/X4qG/4AIYD9fioxvEAhsbx+KgD9QCG"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_jtx5n"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(1.9990413, 2.0004966, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("/////////z8AAAAA////PwAA//////8///8AAP///z///wAAAACqKgAAAAD//6oq//8AAP//qioAAAAAAACqKgAAAAAAAAAAAAD/////AAAAAAAA//8AAAAA//8AAAAAAAD//wAAAAD//wAAAAAAAP////8AAAAAAAAAAAAAAAD/////AAD/P///AAD///8//////////z///wAAAAD/PwAA//8AAKoq////////qioAAP////+qKv////8AAKoq/////////////////////1RVVFVUVVRVVFVUVVRVVFX/P/9//z//f/8//3//P/9/////f////3////9/////f/9/AAD/fwAA/38AAP9/AABU1aoqVNWqKlTVqipU1aoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_jnmdy")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_r26wb"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAEAAwAFAAIABQAAAAIABgAEAAAABQAGAAAABwABAAQABwADAAEABgAHAAQABQADAAcABQAHAAYA"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("////////AAAAAAAA//8AAAAA/////wAAAAAAAAAAAAD//wAA//8AAAAA//8AAAAA/////wAAAAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kacm7"]
+resource_name = "Sketchfab_Scene_Cell4_Material_0"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"attribute_data": PackedByteArray("qEoGahMA+7SoSvu0EwAGapv39lEj8QIMI/H2UZv3AgxB/vZRyfcCDMn39lFB/gIMnveb99//3f/f/5v3nvfd/8Pw9lFL6gIMS+r2UcPwAgzq6fZRcuMCDHLj9lHq6QIM"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_jtx5n"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("/////////z8AAAAA////PwAA//////8///8AAP///z///wAAAACqKgAAAAD//6oq//8AAP//qioAAAAAAACqKgAAAAAAAAAAAAD/////AAAAAAAA//8AAAAA//8AAAAAAAD//wAAAAD//wAAAAAAAP////8AAAAAAAAAAAAAAAD/////AAD/P///AAD///8//////////z///wAAAAD/PwAA//8AAKoq////////qioAAP////+qKv////8AAKoq/////////////////////1RVVFVUVVRVVFVUVVRVVFX/P/9//z//f/8//3//P/9/////f////3////9/////f/9/AAD/fwAA/38AAP9/AABU1aoqVNWqKlTVqipU1aoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_r26wb")
+
+[node name="sidewalk_tile" type="Node3D" unique_id=2026035738]
+
+[node name="Sketchfab_model" type="Node3D" parent="." unique_id=1092745519]
+transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, 0, 0, 0)
+
+[node name="FloorTile_fbx" type="Node3D" parent="Sketchfab_model" unique_id=1924315639]
+transform = Transform3D(0.01, 0, 0, 0, 0, -0.01, 0, 0.01, 0, 0, 0, 0)
+
+[node name="RootNode" type="Node3D" parent="Sketchfab_model/FloorTile_fbx" unique_id=1461878150]
+
+[node name="Cell1" type="Node3D" parent="Sketchfab_model/FloorTile_fbx/RootNode" unique_id=1988715993]
+transform = Transform3D(100, 0, 0, 0, -1.6292068e-05, 2.9082022, 0, -100, -4.7380627e-07, 0, 0, 0)
+
+[node name="Cell1_Material_0" type="MeshInstance3D" parent="Sketchfab_model/FloorTile_fbx/RootNode/Cell1" unique_id=1533910421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.2708968e-09, 0.47928807)
+mesh = SubResource("ArrayMesh_i6era")
+
+[node name="Cell1_Material_1" type="MeshInstance3D" parent="Sketchfab_model/FloorTile_fbx/RootNode/Cell1" unique_id=99945832]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -2, 0.29466695)
+mesh = SubResource("ArrayMesh_i6era")
+
+[node name="Cell2" type="Node3D" parent="Sketchfab_model/FloorTile_fbx/RootNode" unique_id=125220026]
+transform = Transform3D(100, 0, 0, 0, -1.6292068e-05, 2.9082022, 0, -100, -4.7380627e-07, 0, 0, 232.26001)
+
+[node name="Cell3" type="Node3D" parent="Sketchfab_model/FloorTile_fbx/RootNode" unique_id=1041978938]
+transform = Transform3D(100, 0, 0, 0, -1.6292068e-05, 2.9082022, 0, -100, -4.7380627e-07, -214.19937, 0, 232.26001)
+
+[node name="Cell4" type="Node3D" parent="Sketchfab_model/FloorTile_fbx/RootNode" unique_id=1190429294]
+transform = Transform3D(100, 0, 0, 0, -1.6292068e-05, 2.9082022, 0, -100, -4.7380627e-07, -214.19937, 0, -2.2410154)
+
+[node name="Cell4_Material_0" type="MeshInstance3D" parent="Sketchfab_model/FloorTile_fbx/RootNode/Cell4" unique_id=2088451362]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14521933, -0.02148852, 0.4300612)
+mesh = SubResource("ArrayMesh_kacm7")
+
+[node name="Cell4_Material_1" type="MeshInstance3D" parent="Sketchfab_model/FloorTile_fbx/RootNode/Cell4" unique_id=1921126865]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1337888, -2.012292, 0.3894098)
+mesh = SubResource("ArrayMesh_kacm7")
+
+[node name="Cell5" type="Node3D" parent="Sketchfab_model/FloorTile_fbx/RootNode" unique_id=172100862]
+transform = Transform3D(100, 0, 0, 0, -1.6292068e-05, 2.9082022, 0, -100, -4.7380627e-07, 0, 0, 462.5991)
+
+[node name="Cell6" type="Node3D" parent="Sketchfab_model/FloorTile_fbx/RootNode" unique_id=932390822]
+transform = Transform3D(100, 0, 0, 0, -1.6292068e-05, 2.9082022, 0, -100, -4.7380627e-07, -214.19937, 0, 462.5991)
