@@ -3,7 +3,7 @@ extends Control
 ##  THE STOLEN SHARE — Horror Splash / Loading Screen
 ## ============================================================
 
-@export var next_scene_path: String = "res://Levels/level_new.tscn"
+@export var next_scene_path: String = "res://scenery/game_intro.tscn"
 @export var min_display_time: float = 6.5  
 @export var custom_ui_font: Font           
 

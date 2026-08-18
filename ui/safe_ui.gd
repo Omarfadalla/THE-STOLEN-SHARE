@@ -154,8 +154,8 @@ func _style_lock(btn: Button) -> void:
 	btn.add_theme_stylebox_override("pressed", p)
 
 func _style_buttons() -> void:
-	_style_arrow($MainPanel/DialArea/ArrowLeft, "<")
-	_style_arrow($MainPanel/DialArea/ArrowRight, ">")
+	_style_arrow($MainPanel/DialArea/ArrowLeft, " > ")
+	_style_arrow($MainPanel/DialArea/ArrowRight, " > ")
 	_style_lock($MainPanel/DialArea/LockButton)
 
 

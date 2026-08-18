@@ -1,7 +1,10 @@
 extends Control
 
 func _ready() -> void:
+	$fade_ui/AnimationPlayer.play("fade")
 	$pause_menu.visible = false
+	await get_tree().create_timer(3.1 , false).timeout
+	$fade_ui.visible = false
 
 func resume_game():
 	get_tree().paused = false
