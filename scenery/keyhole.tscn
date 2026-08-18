@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://im02ad8awdpu"]
+
+[ext_resource type="PackedScene" uid="uid://bwc8k4g3mv376" path="res://glb_models/victorian_ornate_keyhole_escutcheon.glb" id="1_eqiun"]
+
+[node name="Sketchfab_Scene" unique_id=966300545 instance=ExtResource("1_eqiun")]
+
+[node name="Node3D" type="Node3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/I2M_Pocket Door Hardware - Pocket Door Pulls_001_0" parent_id_path=PackedInt32Array(973253316) index="1" unique_id=1557592277]
+
+[node name="Node3D" type="Node3D" parent="." index="1" unique_id=239267818]

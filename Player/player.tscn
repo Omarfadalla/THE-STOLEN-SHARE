@@ -43,7 +43,7 @@ shadow_bias = 2.306
 spot_range = 1000000.0
 spot_angle_attenuation = 0.57434916
 script = ExtResource("5_fhl08")
-up_offset = 1.0
+up_offset = 0.75
 wall_clear_margin = 0.5
 
 [node name="player_ui" parent="." unique_id=464771036 instance=ExtResource("4_gwnis")]
