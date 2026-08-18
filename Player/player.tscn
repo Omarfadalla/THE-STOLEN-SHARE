@@ -28,10 +28,14 @@ script = ExtResource("2_4ntmi")
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=1102572910]
 script = ExtResource("3_k53q1")
 
-[node name="RayCast3D" type="RayCast3D" parent="Head" unique_id=1610505935]
+[node name="KeyHold" type="Marker3D" parent="Head/Camera3D" unique_id=784304855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.601, -0.174, -1.5)
+
+[node name="RayCast3D" type="RayCast3D" parent="Head" unique_id=1610505935 node_paths=PackedStringArray("key_hold")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.09829581, -0.44429433)
 target_position = Vector3(0, -1.5, 0)
 script = ExtResource("3_btcbx")
+key_hold = NodePath("../Camera3D/KeyHold")
 
 [node name="flashlight" type="SpotLight3D" parent="Head" unique_id=1740132874]
 process_priority = 1
