@@ -12,6 +12,9 @@ func _process(delta: float) -> void:
 		SPEED = 150
 	if !crouching and SPEED != 250:
 		SPEED = 250
+	if Input.is_action_just_pressed("flashlight"):
+		$Head/flashlight.visible = !$Head/flashlight.visible
+
 
 func _physics_process(delta: float) -> void:
 	

@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://uaupfix5tt31" path="res://Player/player_interact.gd" id="3_btcbx"]
 [ext_resource type="Script" uid="uid://bqb7a285utsqn" path="res://general_scripts/fov.gd" id="3_k53q1"]
 [ext_resource type="PackedScene" uid="uid://cuxpjflibm8ci" path="res://scenery/player_ui.tscn" id="4_gwnis"]
+[ext_resource type="Script" uid="uid://dt81dqgt5oyiu" path="res://general_scripts/flashlight.gd" id="5_fhl08"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a241x"]
 
@@ -32,14 +33,17 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0
 target_position = Vector3(0, -1.5, 0)
 script = ExtResource("3_btcbx")
 
-[node name="flashlight" type="SpotLight3D" parent="Head" unique_id=187171137]
+[node name="flashlight" type="SpotLight3D" parent="Head" unique_id=1740132874]
+process_priority = 1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.13169909, -0.45441818)
+layers = 3
 light_energy = 200.0
 shadow_enabled = true
 shadow_bias = 2.306
-spot_range = 1237.1
-spot_attenuation = 0.9
-spot_angle = 45.27
-spot_angle_attenuation = 2.4622889
+spot_range = 1000000.0
+spot_angle_attenuation = 0.57434916
+script = ExtResource("5_fhl08")
+up_offset = 1.0
+wall_clear_margin = 0.5
 
 [node name="player_ui" parent="." unique_id=464771036 instance=ExtResource("4_gwnis")]

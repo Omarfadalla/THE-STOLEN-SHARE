@@ -3,6 +3,10 @@ extends RayCast3D
 @onready var player_ui = get_tree().current_scene.get_node("player/player_ui")
 @onready var crosshair = player_ui.get_node("crosshair")
 
+func _ready() -> void:
+		if Input.is_action_just_pressed("flashlight"):
+			$Head/flashlight.visible = !$Head/flashlight.visible
+	
 
 func _physics_process(delta: float) -> void:
 	if is_colliding():
