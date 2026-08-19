@@ -208,7 +208,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, -1.42727
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, -2.6555264)
 
 [node name="tree" parent="bushes and tress" unique_id=2105168523 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, -1.9310349)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, -1.9310349)
 
 [node name="bush41" parent="bushes and tress" unique_id=1280610921 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, -11.181068)
@@ -217,7 +217,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, -11.1810
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, -12.409316)
 
 [node name="tree21" parent="bushes and tress" unique_id=365759169 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, -11.684825)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, -11.684825)
 
 [node name="bush43" parent="bushes and tress" unique_id=1641071014 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 13.35091)
@@ -226,7 +226,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 13.35091
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, 12.122663)
 
 [node name="tree22" parent="bushes and tress" unique_id=643910447 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, 12.847154)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, 12.847154)
 
 [node name="bush45" parent="bushes and tress" unique_id=1327792921 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 6.98153)
@@ -235,7 +235,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 6.98153)
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, 5.7532825)
 
 [node name="tree23" parent="bushes and tress" unique_id=1458994351 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, 6.4777737)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, 6.4777737)
 
 [node name="bush47" parent="bushes and tress" unique_id=55535805 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 1.7374077)
@@ -244,7 +244,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 1.737407
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, 0.50916004)
 
 [node name="tree24" parent="bushes and tress" unique_id=1401588177 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, 1.2336512)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, 1.2336512)
 
 [node name="bush49" parent="bushes and tress" unique_id=94018602 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, -4.4827957)
@@ -253,7 +253,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, -4.48279
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, -5.7110434)
 
 [node name="tree25" parent="bushes and tress" unique_id=1318684818 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, -4.9865522)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, -4.9865522)
 
 [node name="bush3" parent="bushes and tress" unique_id=1622619106 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, -7.3601213)
@@ -262,7 +262,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, -7.36012
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, -8.588368)
 
 [node name="tree2" parent="bushes and tress" unique_id=1905243824 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, -7.8638773)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, -7.8638773)
 
 [node name="bush5" parent="bushes and tress" unique_id=549737812 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 4.2301135)
@@ -271,7 +271,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 4.230113
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, 3.0018663)
 
 [node name="tree3" parent="bushes and tress" unique_id=1799646217 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, 3.7263575)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, 3.7263575)
 
 [node name="bush7" parent="bushes and tress" unique_id=2008915471 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 10.069309)
@@ -280,7 +280,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 10.06930
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, 8.841062)
 
 [node name="tree4" parent="bushes and tress" unique_id=1181171704 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, 9.565553)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, 9.565553)
 
 [node name="bush9" parent="bushes and tress" unique_id=219477597 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 16.564877)
@@ -289,7 +289,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 16.56487
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, 15.336629)
 
 [node name="tree5" parent="bushes and tress" unique_id=128723131 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, 16.06112)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, 16.06112)
 
 [node name="bush11" parent="bushes and tress" unique_id=1424393590 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 22.297289)
@@ -298,7 +298,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 22.29728
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, 21.069042)
 
 [node name="tree6" parent="bushes and tress" unique_id=1574726394 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, 21.793531)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, 21.793531)
 
 [node name="bush13" parent="bushes and tress" unique_id=2057192466 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 22.297289)
@@ -307,7 +307,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 22.29728
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, 21.069042)
 
 [node name="tree7" parent="bushes and tress" unique_id=1611315008 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, 21.793531)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, 21.793531)
 
 [node name="bush15" parent="bushes and tress" unique_id=1296324742 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 28.091612)
@@ -316,7 +316,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 28.09161
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, 26.863365)
 
 [node name="tree8" parent="bushes and tress" unique_id=529423014 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, 27.587854)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, 27.587854)
 
 [node name="bush17" parent="bushes and tress" unique_id=1895198882 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 34.642532)
@@ -325,7 +325,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 34.64253
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, 33.414284)
 
 [node name="tree9" parent="bushes and tress" unique_id=1985281338 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, 34.13877)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, 34.13877)
 
 [node name="bush19" parent="bushes and tress" unique_id=1352904983 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 40.83781)
@@ -334,7 +334,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 9.19688, 0.19140959, 40.83781
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.660649, 0.19140959, 39.609562)
 
 [node name="tree10" parent="bushes and tress" unique_id=1403667657 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 8.990994, -0.011315107, 40.33405)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.990994, -0.011315107, 40.33405)
 
 [node name="bush21" parent="bushes and tress" unique_id=791065269 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, -1.427279)
@@ -343,7 +343,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, -1.427
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.861922, 0.19140959, -2.6555264)
 
 [node name="tree11" parent="bushes and tress" unique_id=1740516833 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -8.531577, -0.011315107, -1.9310349)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -7.531577, -0.011315107, -1.9310349)
 
 [node name="bush23" parent="bushes and tress" unique_id=1565976397 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, -7.3601213)
@@ -352,7 +352,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, -7.360
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.861922, 0.19140959, -8.588368)
 
 [node name="tree12" parent="bushes and tress" unique_id=1320900653 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -8.531577, -0.011315107, -7.8638773)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -9.531577, -0.011315107, -7.8638773)
 
 [node name="bush25" parent="bushes and tress" unique_id=681263383 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 4.2301135)
@@ -361,7 +361,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 4.2301
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.861922, 0.19140959, 3.0018663)
 
 [node name="tree13" parent="bushes and tress" unique_id=249451923 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -8.531577, -0.011315107, 3.7263575)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -9.531577, -0.011315107, 3.7263575)
 
 [node name="bush27" parent="bushes and tress" unique_id=822364665 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 10.069309)
@@ -370,7 +370,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 10.069
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.861922, 0.19140959, 8.841062)
 
 [node name="tree14" parent="bushes and tress" unique_id=1445587308 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -8.531577, -0.011315107, 9.565553)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -9.531577, -0.011315107, 9.565553)
 
 [node name="bush29" parent="bushes and tress" unique_id=1991425298 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 16.564877)
@@ -379,7 +379,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 16.564
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.861922, 0.19140959, 15.336629)
 
 [node name="tree15" parent="bushes and tress" unique_id=890577250 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -8.531577, -0.011315107, 16.06112)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -9.531577, -0.011315107, 16.06112)
 
 [node name="bush31" parent="bushes and tress" unique_id=55978640 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 22.297289)
@@ -388,7 +388,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 22.297
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.861922, 0.19140959, 21.069042)
 
 [node name="tree16" parent="bushes and tress" unique_id=1194502275 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -8.531577, -0.011315107, 21.793531)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -9.531577, -0.011315107, 21.793531)
 
 [node name="bush33" parent="bushes and tress" unique_id=914469156 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 22.297289)
@@ -397,7 +397,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 22.297
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.861922, 0.19140959, 21.069042)
 
 [node name="tree17" parent="bushes and tress" unique_id=59092358 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -8.531577, -0.011315107, 21.793531)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -9.531577, -0.011315107, 21.793531)
 
 [node name="bush35" parent="bushes and tress" unique_id=1548968433 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 28.091612)
@@ -406,7 +406,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 28.091
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.861922, 0.19140959, 26.863365)
 
 [node name="tree18" parent="bushes and tress" unique_id=1765761913 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -8.531577, -0.011315107, 27.587854)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -9.531577, -0.011315107, 27.587854)
 
 [node name="bush37" parent="bushes and tress" unique_id=58056236 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 34.642532)
@@ -415,7 +415,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 34.642
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.861922, 0.19140959, 33.414284)
 
 [node name="tree19" parent="bushes and tress" unique_id=1533871733 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -8.531577, -0.011315107, 34.13877)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -9.531577, -0.011315107, 34.13877)
 
 [node name="bush39" parent="bushes and tress" unique_id=1315925436 instance=ExtResource("5_hw0kw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 40.83781)
@@ -424,7 +424,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.325691, 0.19140959, 40.837
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.861922, 0.19140959, 39.609562)
 
 [node name="tree20" parent="bushes and tress" unique_id=608101127 instance=ExtResource("6_qjkrc")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -8.531577, -0.011315107, 40.33405)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -9.531577, -0.011315107, 40.33405)
 
 [node name="cutscene_cam" type="Camera3D" parent="." unique_id=89374380]
 transform = Transform3D(0.6575198, 0, -0.75343704, 0, 1, 0, 0.75343704, 0, 0.6575198, -8.447075, 1.222841, 9.56791)
