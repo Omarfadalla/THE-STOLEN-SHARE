@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://cub80erndnnx2"]
+
+[ext_resource type="Script" uid="uid://c5cvtg0h6m451" path="res://enemy_ai/actors/enemy/enemy_ai.gd" id="1"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_body"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_body"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_body"]
+roughness = 0.0
+
+[node name="HorrorEnemy" type="CharacterBody3D" unique_id=1897978907]
+script = ExtResource("1")
+patrol_speed = 200.0
+investigate_speed = 150.0
+chase_speed = 200.0
+rotation_speed = 20.0
+waypoint_tolerance = 5.0
+vision_close_range = 50.0
+eye_height = 20.0
+hearing_range = 33.0
+attack_range = 50.0
+search_radius = 50.0
+memory_duration = 10.0
+patrol_wait_time = 1.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=604928175]
+shape = SubResource("CapsuleShape3D_body")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=349315773]
+mesh = SubResource("CapsuleMesh_body")
+surface_material_override/0 = SubResource("StandardMaterial3D_body")
+
+[node name="Eyes" type="Node3D" parent="." unique_id=816174030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1991062110]
+path_desired_distance = 200.0
+target_desired_distance = 200.0
+path_max_distance = 200.01
+
+[node name="AttackTimer" type="Timer" parent="." unique_id=435798196]
+one_shot = true
+
+[node name="PatrolWaitTimer" type="Timer" parent="." unique_id=245213278]
+one_shot = true
+
+[node name="SearchWaitTimer" type="Timer" parent="." unique_id=1119608280]
+one_shot = true
+
+[node name="VisionCheckTimer" type="Timer" parent="." unique_id=400980641]
+wait_time = 0.15

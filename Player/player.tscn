@@ -11,7 +11,7 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ynen2"]
 
-[node name="player" type="CharacterBody3D" unique_id=131117120]
+[node name="player" type="CharacterBody3D" unique_id=131117120 groups=["player"]]
 floor_max_angle = 1.134464
 script = ExtResource("1_l8h54")
 

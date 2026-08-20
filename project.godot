@@ -8,6 +8,10 @@
 
 config_version=5
 
+[accessibility]
+
+general/autoload_on_startup=true
+
 [application]
 
 config/name="THE STOLEN SHARE"
@@ -15,13 +19,25 @@ run/main_scene="uid://cfrkv7ps1mc6x"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+NoiseBus="*uid://bugpi5445ubrp"
+
 [display]
 
 window/stretch/mode="canvas_items"
 
+[editor]
+
+version_control/autoload_on_startup=true
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+
+[global_group]
+
+player=""
 
 [input]
 

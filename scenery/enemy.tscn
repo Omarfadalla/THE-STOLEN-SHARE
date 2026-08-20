@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c84pk7ab4pghb"]
+
+[ext_resource type="Script" uid="uid://bgq3o3b74yfb3" path="res://general_scripts/enemy.gd" id="1_niajt"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hae07"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_niajt"]
+
+[node name="enemy" type="CharacterBody3D" unique_id=1091442721]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+script = ExtResource("1_niajt")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1305362342]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_hae07")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1289990172]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_niajt")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=88022598]
